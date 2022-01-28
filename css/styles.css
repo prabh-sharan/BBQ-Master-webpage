@@ -156,7 +156,7 @@ input:focus {
    media queries 
    ================= */
    
-@media (min-width: 500px) {
+@media (min-width: 600px) {
     body {
         font-size: 1.125rem;
         display: flex;
