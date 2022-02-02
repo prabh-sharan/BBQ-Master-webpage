@@ -21,3 +21,5 @@ emailCollector.addEventListener("submit", event =>{
     updateMainContent.innerHTML = updatedInfo
 
 })
+
+// carousal  
