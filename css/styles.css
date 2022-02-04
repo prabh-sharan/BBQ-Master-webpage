@@ -70,10 +70,11 @@ strong { font-weight: 900; }
    
 .intro {
     background-image: url(../images/ribs.jpg), linear-gradient(45deg,#dee2e6, #212529);
-    /* background-color: #ff0000; */
     background-blend-mode: multiply;
     background-size: cover;
     background-position: center;
+    /* background-color: rgb(29, 23, 23); */
+ 
     padding: 0 .5em 2em;
     display: flex;
     flex-direction: column;
