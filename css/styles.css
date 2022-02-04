@@ -20,12 +20,12 @@ body {
 h1 {
     font-size: 2.25rem;
     font-weight: 300;
-    color: #fff;
+    color: #F1E8DB;
     margin: 0;
 }
 
 h1 + p {
-    color: #F18119;
+    color: #F1E8DB;
     font-weight: 900;
     font-size: 1.3125rem;
     text-transform: uppercase;
@@ -39,7 +39,7 @@ h2 {
 
 h2 + p {
     font-weight: 900;
-    color: #F18119;
+    color: #991b1b;
     margin-top: 0;
     text-transform: uppercase;
 }
@@ -48,32 +48,56 @@ h2 + p {
     font-size: 0.625rem;
     margin: 0;
     padding-top: 2px;
-    color: #F18119;
+    color: #F1E8DB;
     font-weight: 900;
     text-transform: uppercase;
     order: -1;
-    border-top: 5px solid #F18119;
-    border-image: linear-gradient(to left, #ff713b, #ffa51d) 1;
+    border-top: 5px solid #991b1b;
+    border-image: linear-gradient(to left, #991b1b, #dc2626) 1;
 }
 
 .fine-print {
     font-size: 0.625rem;
     letter-spacing: 1px;
 }
+.header-title{
+    font-size: 2rem;
+}
+
+footer p,
+.header-title,
+.footer-title{
+    letter-spacing: 1px;
+}
+.footer-title{
+    font-size:1.5rem ;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+footer p{
+    font-weight:400;
+    margin-top: 0.6em; 
+    margin-bottom: 0;
+    /* border:2px solid white; */
+}
+
 
 strong { font-weight: 900; }
-
 
 /* =================
    Intro section 
    ================= */
    
 .intro {
-    background-image: url(../images/ribs.jpg), linear-gradient(45deg,#dee2e6, #212529);
-    /* background-color: #ff0000; */
-    background-blend-mode: multiply;
+    background-image: url(../images/dark-ribs.jpg);
+    /* background-blend-mode: multiply;
+    , linear-gradient(45deg,#dee2e6, #212529) */
     background-size: cover;
     background-position: center;
+    /* background-color: rgb(29, 23, 23); */
+    border:2.5em solid #fff;
+    border-right:0;
     padding: 0 .5em 2em;
     display: flex;
     flex-direction: column;
@@ -97,6 +121,65 @@ strong { font-weight: 900; }
     max-width: 400px;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* =================
+   header and footer 
+   ================= */
+
+
+ header,
+ footer{
+    background:#991b1b;
+    color:#F1E8DB;
+}
+header{
+    padding:2em 0;
+
+}
+
+header ul{
+     list-style: none;
+     padding-left: 0;
+}
+
+header ul li{
+    padding-top: 0.75em;
+    font-size:1.2rem ;
+}
+
+.header-list{
+    text-decoration: none;
+    color:#F1E8DB;
+    padding-top: 1em;
+}
+.header-image{
+    width:150px;
+    max-width: 100%;
+
+}
+
+footer{
+    padding:4em 0 ;
+    margin-bottom:0;
+}  
+
+.footer-column{
+    padding-left:1em;
+    /* border:2px solid white; */
+}
+
+
+.footer-social{
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer-social:hover,
+.footer-social:focus,
+.header-list:hover,
+.header-list:focus{
+    text-decoration: underline;
 }
 
 
@@ -141,8 +224,8 @@ input:focus {
 }
 
 .btn-primary {
-    background-image: linear-gradient(to left, #FF713B, #FFA51D);
-    color: white;
+    background-image: linear-gradient(to left, #991b1b, #dc2626);
+    color: #F1E8DB;
     transform: scale(1);
     transition: transform 250ms;
 }
@@ -159,9 +242,10 @@ input:focus {
 @media (min-width: 600px) {
     body {
         font-size: 1.125rem;
+    }
+    section{
         display: flex;
     }
-    
     h1 {
         font-size: 3.5rem;
     }
@@ -182,4 +266,25 @@ input:focus {
         flex-direction: column;
         justify-content: center;
     }
+    header{
+        display: flex;
+        justify-content: space-around;
+    }
+    .header-icon{
+        border:2px solid greenyellow;
+    }
+    header ul{
+        width:600px;
+        max-width: 100%;
+        display:flex;
+        justify-content: space-around;
+        border:2px solid white;
+    }
+
+    footer{
+        display: flex;
+        justify-content: space-around;
+        text-align: left;
+    }
+
 }
