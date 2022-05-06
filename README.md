@@ -1,3 +1,3 @@
-Responsive-Barbeque-Workshop-website
+Barbeque-Workshop-website
 
  
